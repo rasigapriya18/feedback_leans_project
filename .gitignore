@@ -1,0 +1,7 @@
+node_modules/
+public/assets/
+*.log
+
+.env
+.env.*
+!.env.example

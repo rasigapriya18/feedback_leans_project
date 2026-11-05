@@ -1,0 +1,20 @@
+{
+  "name": "feebacklens",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.cjs",
+    "start": "npm run build && node server.cjs",
+    "dev": "node build.cjs --watch"
+  },
+  "dependencies": {
+    "dotenv": "18.0.9",
+    "jsonwebtoken": "9.0.3",
+    "pdfjs-dist": "6.4.299",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

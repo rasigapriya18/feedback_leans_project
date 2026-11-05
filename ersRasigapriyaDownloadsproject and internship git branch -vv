@@ -1,0 +1,65 @@
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 1a27d68..7e6d89a 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -1,30 +1,42 @@[m
+[32m+[m[32m## Project Idea[m
+ [m
+[31m-# Feedback Lens[m
+[32m+[m[32mFeedback Lens is a customer feedback analysis application. It helps users understand customer responses by identifying sentiment, common themes, and priorities.[m
+ [m
+[31m-React frontend with a Node.js static server and esbuild bundler. Browser-local feedback analyzer with sentiment, themes, priorities, and Markdown reports.[m
+[32m+[m[32m## Technologies Used[m
+ [m
+[31m-## Run[m
+[32m+[m[32m- React.js[m
+[32m+[m[32m- JavaScript[m
+[32m+[m[32m- Node.js[m
+[32m+[m[32m- HTML and CSS[m
+[32m+[m[32m- esbuild[m
+[32m+[m[32m- Git and GitHub[m
+ [m
+[31m-    npm install[m
+[31m-    npm start[m
+[32m+[m[32m## Development Plan[m
+ [m
+[31m-Open http://127.0.0.1:4318. To share temporarily, run `ngrok http 4318`.[m
+[32m+[m[32m- Day 1: Set up the project repository and README documentation.[m
+[32m+[m[32m- Day 2: Develop the feedback input and import functionality.[m
+[32m+[m[32m- Day 3: Implement sentiment and theme analysis.[m
+[32m+[m[32m- Day 4: Develop the insights and report export features.[m
+[32m+[m[32m- Day 5: Test the application and improve the documentation.[m
+ [m
+[31m-## Import[m
+[32m+[m[32m## GitHub Issues[m
+ [m
+[31m-Paste one response per line, or import CSV (header row required), TXT, and text-based PDF files up to 2 MB. PDF.js and its worker are served locally. The app does not upload feedback to a server or retain it. PDF response labels such as RESPONSE 01 are recognized; otherwise review extracted lines before analysis. Scanned PDFs need OCR and protected PDFs must be unlocked first.[m
+[32m+[m[32mThe following tasks will be tracked using GitHub Issues:[m
+ [m
+[31m-English keyword rules provide basic analysis and can miss context or sarcasm. Duplicate responses are counted individually. Priority is based on negative/mixed mention counts.[m
+[32m+[m[32m- Improve the feedback input interface.[m
+[32m+[m[32m- Test CSV, TXT, and PDF imports.[m
+[32m+[m[32m- Improve sentiment and theme analysis.[m
+[32m+[m[32m- Test insights and Markdown report export.[m
+[32m+[m[32m- Update project documentation.[m
+ [m
+[31m-## Frontend development[m
+[32m+[m[32m## Project Board[m
+ [m
+[31m-React components are in src/App.jsx. Styles, PDF import, analysis, and report export are separate source modules. Run npm run dev to watch and rebuild, then node server.cjs in another terminal. Reload the browser after source changes. npm start builds the frontend and starts the server.[m
+[31m-[m
+[31m-## Login and JWT[m
+[31m-[m
+[31m-Set LOGIN_USERNAME, LOGIN_PASSWORD, JWT_SECRET, and optionally PORT in the server-only .env file. See .env.example. Restart the server after changes. Never commit .env. The included credentials are for demo use.[m
+[31m-[m
+[31m-JWTs use HS256, a one-hour expiry, issuer/audience checks, and an HttpOnly, SameSite=Strict cookie (Secure over HTTPS). Tokens are never stored in localStorage. Server-side session IDs support logout revocation; restarting the server signs everyone out. Login is rate limited. Browser feedback processing remains local; this demo does not have a database.[m
+[32m+[m[32mA GitHub Project Board will be used to track tasks under:[m
+ [m
+[32m+[m[32m- Todo[m
+[32m+[m[32m- In Progress[m
+[32m+[m[32m- Done[m
+ [m
+[32m+[m[32m## Current Project Status[m
+ [m
+[32m+[m[32mThe Feedback Lens application has a React frontend, a Node.js static server, feedback import functionality, browser-local analysis, and Markdown report export. Further testing and improvements are planned.[m
+\ No newline at end of file[m
